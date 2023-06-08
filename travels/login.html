@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">Customer Login</h1>
+		<form class="login_form" action="maya.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Email or Phone</div>
+			<input autocomplete="off" type="text" id="mail">
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<input type="password" id="pwd">
+			<div id="pass_error">Please fill up your Password</div>
+			<button type="button" onclick="validation()">Login</button>
+		</form>
+	</div>	
+	<script src="script2.js"></script>
+</body>
+</html>
